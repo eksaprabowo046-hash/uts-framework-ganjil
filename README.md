@@ -27,8 +27,8 @@ Pastikan perangkat telah terpasang **PHP >= 8.2** dan **Composer**.
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/eksaprabowo046-hash/template-framework.git
-cd template-framework
+git clone https://github.com/eksaprabowo046-hash/uts-framework-ganjil.git
+cd uts-framework-ganjil
 ```
 
 ### 2. Install Dependensi PHP
