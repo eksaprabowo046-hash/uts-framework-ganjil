@@ -28,9 +28,18 @@ Route::get('/blog', [LandingController::class, 'blog'])->name('landing.blog');
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.dashboard');
     Route::get('/dashboard', [AdminController::class, 'index'])->name('admin.dashboard.index');
+
     Route::get('/charts-chartjs', [AdminController::class, 'chartsChartjs'])->name('admin.charts_chartjs');
+    Route::get('/charts', [AdminController::class, 'chartsChartjs'])->name('admin.charts');
+
     Route::get('/forms-elements', [AdminController::class, 'formsElements'])->name('admin.forms_elements');
+    Route::get('/forms', [AdminController::class, 'formsElements'])->name('admin.forms');
+
     Route::get('/tables-datatables', [AdminController::class, 'tablesDatatables'])->name('admin.tables_datatables');
+    Route::get('/tables', [AdminController::class, 'tablesDatatables'])->name('admin.tables');
+
     Route::get('/ui-sweetalerts', [AdminController::class, 'uiSweetalerts'])->name('admin.ui_sweetalerts');
+    Route::get('/sweetalerts', [AdminController::class, 'uiSweetalerts'])->name('admin.alerts');
+
     Route::get('/login', [AdminController::class, 'login'])->name('admin.login');
 });

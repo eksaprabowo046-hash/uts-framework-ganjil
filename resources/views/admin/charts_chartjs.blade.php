@@ -83,8 +83,6 @@
 
 
                 </div> <!-- container-fluid -->
-            </div>
-            <!-- End Page-content -->
 @endsection
 
 @section('scripts')

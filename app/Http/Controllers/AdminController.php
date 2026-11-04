@@ -22,12 +22,22 @@ class AdminController extends Controller
         return view('admin.charts_chartjs');
     }
 
+    public function charts()
+    {
+        return $this->chartsChartjs();
+    }
+
     /**
      * Display Forms Elements page.
      */
     public function formsElements()
     {
         return view('admin.forms_elements');
+    }
+
+    public function forms()
+    {
+        return $this->formsElements();
     }
 
     /**
@@ -38,12 +48,27 @@ class AdminController extends Controller
         return view('admin.tables_datatables');
     }
 
+    public function tables()
+    {
+        return $this->tablesDatatables();
+    }
+
     /**
      * Display UI SweetAlerts page.
      */
     public function uiSweetalerts()
     {
         return view('admin.ui_sweetalerts');
+    }
+
+    public function sweetalerts()
+    {
+        return $this->uiSweetalerts();
+    }
+
+    public function alerts()
+    {
+        return $this->uiSweetalerts();
     }
 
     /**

@@ -14,6 +14,11 @@ class LandingController extends Controller
         return view('landing.index');
     }
 
+    public function home()
+    {
+        return $this->index();
+    }
+
     /**
      * Display the About Us page.
      */
@@ -44,6 +49,11 @@ class LandingController extends Controller
     public function testimonials()
     {
         return view('landing.testimonials');
+    }
+
+    public function testimonial()
+    {
+        return $this->testimonials();
     }
 
     /**
